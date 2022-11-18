@@ -7,6 +7,7 @@ const hbs=require('express-handlebars')
 var userRouter = require('./routes/user');
 var adminRouter = require('./routes/admin');
 const FileUpload=require('express-fileupload')
+const db=require('./config/connection')
 
 var app = express();
 
@@ -21,6 +22,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(FileUpload())
 app.use(express.static(path.join(__dirname, 'public')));
+db.connect((err)=>{
+  if(err){
+    console.log('database not connected' +err)
+  }else console.log('Connected To The DataBase')
+  
+}); 
+
 
 app.use('/', userRouter);
 app.use('/admin', adminRouter);

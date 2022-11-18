@@ -8,7 +8,7 @@
 
 body {
 
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   min-height: 100vh;
   background: #ffffff;
@@ -19,22 +19,24 @@ body {
 }
 
 .container .card {
+  justify-content:space-around;
   position: relative;
   width: 320px;
   height: 450px;
-  background: #18a7b4;
+  background: #0f6ec7;
   border-radius: 20px;
   overflow: hidden;
 }
 
 .container .card:before {
+  justify-content:space-around;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3ebbdd;
+  background: #cad3dd;
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -44,14 +46,15 @@ body {
 }
 
 .container .card:after {
+  
   content: 'Audio';
   position: absolute;
   top: 40%;
   left: 10%;
   font-size: 6em;
   font-weight: 800;
-  font-style: italic;
-  color: rgba(116, 155, 175, 0.34)
+  
+  color: rgba(0, 0, 0, 0.262)
 }
 
 .container .card .imgBx {

@@ -1,34 +1,243 @@
 
-  <section>
-      <div class="container mt-5">
-    
-    <link rel='stylesheet' href='/stylesheets/card.css' />
-  
- <div class="row">
-     {{#each products}}
-   
-      <div class="col-md-4">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Audio Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/templatemo.css">
+  <link rel="stylesheet" href="/stylesheets/custom.css">
+
+  <!-- Load fonts style after rendering the layout styles -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+  <link rel="stylesheet" href="/stylesheets/fontawesome.min.css">
+
+</head>
+
+      </div>
+    </div>
+ 
+
+
+
+  <!-- Modal -->
+  <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="w-100 pt-1 mb-5 text-right">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="" method="get" class="modal-content modal-body border-0 p-0">
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+          <button type="submit" class="input-group-text bg-success text-light">
+            <i class="fa fa-fw fa-search text-white"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!--  Bannaer -->
+  <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
         <div class="container">
-         
-          <div class="card">
-            <div class="imgBx">
-              <img src="{{Image}}">
+          <div class="row p-5">
+            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+              <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBN4xL7bv8wJOStf0wVhZ0MVzWdSt8oAiwpA&usqp=CAU0"
+                alt="">
             </div>
-            <div class="contentBx">
-              <h2>{{Name}}</h2>
-              <div class="size">
-                <h3>{{Category}} </h3><br>
-               
-                
+            <div class="col-lg-6 mb-0 d-flex align-items-center">
+              <div class="text-align-left align-self-center">
+                <h1 class=""><b>Audio</b>Solutions
+                </h1>
+                <h3 class="h2">Mid Range High Range Speakers </h3>
+                <p>
+            Low Range and Mid Range High Range are The Basic Element For Enjoy the Clear Audio
+              
+                </p>
               </div>
-              <a href="#">Buy Now</a>
             </div>
           </div>
         </div>
       </div>
-      {{/each}}
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row p-5">
+            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+              <img class="img-fluid" src="https://m.media-amazon.com/images/I/614ZUiwfZ1L._SL1500_.jpg"
+                alt="">
+            </div>
+            <div class="col-lg-6 mb-0 d-flex align-items-center">
+              <div class="text-align-left">
+                <h1 class="h1">Home Theater AV Receivers</h1>
+                <h3 class="h2">full options with android and normal</h3>
+                <p>
+            A Complete functions contain wth audio and video supporting video resolution 4K,and audio is 5.1 to 7.1 Doby Atmos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row p-5">
+            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+              <img class="img-fluid" src="https://wallpaperaccess.com/full/1586883.jpg" alt="">
+            </div>
+            <div class="col-lg-6 mb-0 d-flex align-items-center">
+              <div class="text-align-left">
+                <h1 class="h1">Subwoofers</h1>
+                <h3 class="h2">Vibrating tilts </h3>
+                <p>
+                 The perfect audio Solution with Low Bass Filter With Powerfull Subwoofer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
+      role="button" data-bs-slide="prev">
+      <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
+      role="button" data-bs-slide="next">
+      <i class="fas fa-chevron-right"></i>
+    </a>
+  </div>
+  <!-- Banner Hero -->
+
+
+
+
+
+  <!-- Categories -->
+  <section class="container py-5">
+    <div class="row text-center pt-3">
+      <div class="col-lg-6 m-auto">
+        <h1 class="h1">Categories</h1>
+        <p>
+          An Home Theater Need Audio With Powefull Equipmets For The Complete Entertainment
+        </p>
+      </div>
+    </div>
+     
+    <div class="row">
+    
+      <div class="col-12 col-md-4 p-5 mt-3">
+        <a href="product"><img src="https://m.media-amazon.com/images/I/71HyZKbQbNL._SX355_.jpg"
+          class="img-thumbnail" alt=""></a>
+        <h5 class="text-center mt-3 mb-3">Home Theater Amplifiers</h5>
+        <p class="text-center"><a href="/product" class="btn btn-primary">Go Shop</a></p>
+      </div>
+      <div class="col-12 col-md-4 p-5 mt-3">
+        <a href="#"><img
+            src="https://wallpaperaccess.com/full/1586883.jpg"
+            class="img-thumbnail" alt=""></a>
+        <h2 class="h5 text-center mt-3 mb-3">Subwoofers</h2>
+        <p class="text-center"><a  href="/product"class="btn btn-primary">Go Shop</a></p>
+      </div>
+      <div class="col-12 col-md-4 p-5 mt-3">
+        <a href="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBN4xL7bv8wJOStf0wVhZ0MVzWdSt8oAiwpA&usqp=CAU0"  class="img-thumbnail" alt=""></a>
+        <h2 class="h5 text-center mt-3 mb-3">Range Speakers</h2>
+        <p class="text-center"><a href="/product" class="btn btn-primary" >Go Shop</a></p>
+      </div>
+    </div>
+   
   </section>
 
+  <!-- End Categories of The Month -->
+
+    <section>
+        <div class="container mt-5">
+
+
+            <div class="row">
+                {{#each poweramp}}
+                <div class="col-md-3">
+                    <div class="card" style="width: 15rem; height:43rem;">
+                        <img class="card-img-top" src="/product-images/{{_id}}.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">{{Name}}</h5>
+                            <h5 class="card-title">{{Category}}</h5>
+                            <p class="card-text">{{Info}}</p>
+                            <p class="card-text">{{Price}}</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+{{/each}}
+                
+</div>
+</div>
+</section>
+
+
+
+
+  <!-- Start Footer -->
+  <footer class="bg-dark" id="tempaltemo_footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 pt-5">
+          <h2 class="h2 text-info border-bottom pb-3 border-light logo">Audio Solutuions</h2>
+          <ul class="list-unstyled text-light footer-link-list">
+         
+            <li>
+              <i class="fa fa-phone fa-fw"></i>
+              <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope fa-fw"></i>
+              <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 pt-5">
+          <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+          <ul class="list-unstyled text-light footer-link-list">
+            <li><a class="text-decoration-none" href="#">Stero</a></li>
+            <li><a class="text-decoration-none" href="#">Subwoofer</a></li>
+            <li><a class="text-decoration-none" href="#">Range Speakers</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-4 pt-5">
+          <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+          <ul class="list-unstyled text-light footer-link-list">
+            <li><a class="text-decoration-none" href="#">Home</a></li>
+            <li><a class="text-decoration-none" href="#">About Us</a></li>
+            <li><a class="text-decoration-none" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      
+  <!-- Start Script -->
+  <script src="/javascripts/jquery-1.11.0.min.js"></script>
+  <script src="/javascripts/jquery-migrate-1.2.1.min.js"></script>
+  <script src="/javascripts/bootstrap.bundle.min.js"></script>
+  <script src="/javascripts/templatemo.js"></script>
+  <script src="/javascripts/custom.js"></script>
+  <!-- End Script -->
+</body>
+
+</html>
