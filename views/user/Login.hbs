@@ -1,0 +1,63 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <style>
+        body{
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", sans-serif;;
+  background: linear-gradient(120deg,#c2c2c2,#181818);   
+  height: 100vh;
+  overflow: hidden;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.center h1{
+ text-align: center;
+ padding: 0 0 20px 0;
+ border-bottom: 1px solid silver;   
+
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        
+        <h2 class="ml-5">Please fill this form </h2>
+    
+            <h2 class="text-center">Login</h2>
+            <form action="/login" method="post">
+                <div class="form-group"> 
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                    <input type="Password" class="form-control" name="Password" placeholder="Enter Your Password">
+
+                    </div>
+                    <a href="/signup">Dont You Have an Account </a>
+                    <button type="submit" class="btn btn-primary float-right">Login</button>
+                </div>
+            </form>
+  </body>
+  </html>

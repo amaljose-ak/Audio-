@@ -17,11 +17,12 @@ router.get('/add-products', (req, res) => {
 router.post('/add-products/', (req, res) => {
 
 
-  productHelpers.addProduct(req.body, (id) => {
+  productHelpers.addProduct(req.body,(id) => {
     let image = req.files.image
 
+ 
     console.log(id)
-    image.mv('./public/product-images/' + id + '.jpg', (err, done) => {
+    image.mv('./public/product-images/'+ id + '.jpg', (err, done) => {
       if (!err) {
         res.render('admin/add-products')
       } else {
@@ -34,4 +35,4 @@ router.post('/add-products/', (req, res) => {
 })
 
 
-module.exports = router;
+module.exports = router; 
