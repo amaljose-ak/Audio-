@@ -41,8 +41,10 @@
 </head>
 <body>
     <div class="center">
+        {{#if loginErr}}
+        <h4 class="error ml-4 text-danger">{{loginErr}}</h4>
         
-        <h2 class="ml-5">Please fill this form </h2>
+        {{/if}}
     
             <h2 class="text-center">Login</h2>
             <form action="/login" method="post">

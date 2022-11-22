@@ -2,6 +2,7 @@ const { rejects } = require('assert');
 const { resolve } = require('path');
 const collection = require('../config/collection');
 const db=require('../config/connection')
+var objectId=require('mongodb').ObjectId
 
 
 module.exports={
@@ -20,5 +21,16 @@ return new Promise(async(resolve,rejects)=>{
 
   })
   
+},
+deleteProduct:(proId)=>{
+  return new Promise((resolve,reject)=>{
+    console.log(proId);
+    console.log(objectId(proId))
+    db.get().collection(collection.PRODUCT_HELPERS).deleteOne({_id:objectId(proId)}).then((response)=>{
+     // console.log(response)
+      resolve(response)
+      })
+    })
+    
 }
 }
